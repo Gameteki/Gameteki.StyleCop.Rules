@@ -2,6 +2,7 @@
 <package>
   <metadata>
     <id>CrimsonDev.Gameteki.StyleCop.Rules</id>
+    <license type="expression">MIT</license>
     <authors>Stuart Walsh</authors>
     <description>Global linting rules for CrimsonDev.Gameteki C# projects</description>
     <version>1.0.0</version>
