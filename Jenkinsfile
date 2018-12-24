@@ -4,7 +4,7 @@ node {
     }
 
     stage('build') {
-        withCredentials([usernamePassword(credentialsId: 'nuget_apikey', variable: 'NUGET_APIKEY')]) {
+        withCredentials([string(credentialsId: 'nuget_apikey', variable: 'NUGET_APIKEY')]) {
             sh 'echo $NUGET_APIKEY'
             sh(script: "sed -i 's/%VERSION%/1.0.0.${BUILD_NUMBER}/g' *.nuspec")
             sh(script: "sed -i 's/%VERSION%/1.0.0.${BUILD_NUMBER}/g' *.props")
