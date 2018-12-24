@@ -5,7 +5,7 @@
     <license type="expression">MIT</license>
     <authors>Stuart Walsh</authors>
     <description>Global linting rules for CrimsonDev.Gameteki C# projects</description>
-    <version>1.0.0</version>
+    <version>$VERSION</version>
     <dependencies>
       <dependency id="StyleCop.Analyzers" version="1.1.1-beta.61" />
     </dependencies>
