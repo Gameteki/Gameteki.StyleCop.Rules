@@ -11,7 +11,7 @@ node {
 
     stage('deploy') {
         withCredentials([string(credentialsId: 'nuget_apikey', variable: 'NUGET_APIKEY')]) {
-            sh(script: "dotnet nuget push bin/Release/CrimsonDev.Gameteki.StyleCop.Rules.1.0.0.{$BUILD_NUMBER}.nupkg -k ${NUGET_APIKEY} -s https://api.nuget.org/v3/index.json")
+            sh(script: "dotnet nuget push bin/Release/CrimsonDev.Gameteki.StyleCop.Rules.1.0.0.${BUILD_NUMBER}.nupkg -k ${NUGET_APIKEY} -s https://api.nuget.org/v3/index.json")
         }
     }
 }
